@@ -58,7 +58,7 @@ if [ -d ~/.steam/steam/steamapps/common/Team\ Fortress\ 2/tf/maps/ ]; then
         git reset --hard origin/master
         popd
     else
-        git clone --depth 1 https://github.com/MasterCatPl/polskabot-database
+        git clone --depth 1 https://github.com/MasterCatPL/polskabot-database
     fi
 
     echo "Copying navmeshes..."
