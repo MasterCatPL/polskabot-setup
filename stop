@@ -8,9 +8,6 @@
 [ -f /tmp/ncat-cathook-webpanel.pid ] && PID="$(cat /tmp/ncat-cathook-webpanel.pid)" && sudo kill -SIGINT "$PID" && tail --pid="$PID" -f /dev/null
 
 [ -f /tmp/ncat-cathook-webpanel.pid ] && sudo rm /tmp/ncat-cathook-webpanel.pid
-pushd nullnexus-proxy
-PATH="$PATH" pm2 stop index.js
-popd
 [ -f /tmp/cat-ipc-server.pid ] && sudo rm /tmp/cat-ipc-server.pid
 [ -f /tmp/pulsemodule.id ] && pactl unload-module $(cat /tmp/pulsemodule.id) && rm /tmp/pulsemodule.id
 
@@ -18,3 +15,5 @@ ipcserver=$( ps faux | grep '/opt/cathook/ipc/server' | grep -vw grep | awk '{ p
 [ ! -z "$ipcserver" ] && sudo kill ${ipcserver};
 ipcconsole=$( ps faux | grep '/opt/cathook/ipc/console' | grep -vw grep | awk '{ print $2 }' );
 [ ! -z "$ipcconsole" ] && sudo kill ${ipcconsole};
+
+echo "Stopped"
