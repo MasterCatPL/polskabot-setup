@@ -47,11 +47,6 @@ git remote set-url origin https://github.com/MasterCatPL/polskahook-ipc-server
 bash update.sh
 popd
 
-pushd nullnexus-proxy
-git remote set-url origin https://gitlab.com/nullworks/cathook/nullnexus-proxy
-bash update.sh
-popd
-
 pushd polskahook-ipc-web-panel
 git remote set-url origin https://github.com/MasterCatPl/polskahook-ipc-web-panel
 bash update.sh
