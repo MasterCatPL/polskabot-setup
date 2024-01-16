@@ -117,4 +117,4 @@ sudo sed -i 's/^restricted-network yes/# restricted-network yes/g' /etc/firejail
 echo
 echo "The web panel can be started with ./start"
 echo
-echo "Create a list of steam accounts, and save them to catbot-setup/accounts.txt in username:password format."
+echo "Create a list of steam accounts, and save them to polskabot-setup/accounts.txt in username:password format."
