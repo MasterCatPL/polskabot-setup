@@ -48,7 +48,7 @@ bash update.sh
 popd
 
 pushd polskahook-ipc-web-panel
-git remote set-url origin https://github.com/MasterCatPl/polskahook-ipc-web-panel
+git remote set-url origin https://github.com/MasterCatPL/polskahook-ipc-web-panel
 bash update.sh
 popd
 
