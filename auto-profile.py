@@ -23,7 +23,7 @@ accounts = data.split('\n')
 accounts = [account for account in accounts if account.strip()]  # we don't want empty strings.
 
 profile = open('bot-profile.jpg', 'rb')
-nickname = 'youtube.com/@RosneGaming'
+nickname = 'POLSKAHOOK'
 
 enable_debugging = False
 enable_extra_info = False
