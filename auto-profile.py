@@ -31,9 +31,9 @@ enable_avatarchange = True
 enable_namechange = True
 enable_nameclear = True
 enable_set_up = True
-enable_gatherid32 = False
+enable_gatherid32 = True
 dump_response = False
-make_commands = True
+make_commands = False
 force_sleep = False
 
 def debug(message):
